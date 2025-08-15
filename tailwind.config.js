@@ -1,10 +1,12 @@
-export default {
+module.exports = {
   content: [
-    "./index.html",
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
     extend: {},
   },
+  future: {
+    colorSpace: 'srgb',
+  },
   plugins: [],
-}
+};
