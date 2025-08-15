@@ -76,14 +76,14 @@ const Card = ({ image, name, position, title, message }) => {
   return (
     <>
       <div
-        className={`glass-card rounded-2xl aspect-[30/31] p-6 flex flex-col items-center justify-between text-center bg-white/15 cursor-pointer transform transition-transform duration-500 ${isFlipped ? '' : 'scale-100'}`}
+        className={`glass-card rounded-2xl aspect-[3/4] p-6 flex flex-col items-center justify-between text-center bg-white/15 cursor-pointer transform transition-transform duration-500 ${isFlipped ? '' : 'scale-100'}`}
         onClick={handleCardClick}
         role="button"
         aria-expanded={isFlipped}
         tabIndex={0}
         onKeyDown={(e) => e.key === 'Enter' && handleCardClick()}
       >
-        <div className="w-24 h-24 rounded-full overflow-hidden mb-4 mt-10">
+        <div className="w-30 h-30 rounded-full overflow-hidden mb-4 mt-10">
           <img src={image} alt={name} className="w-full h-full object-cover" />
         </div>
         <div>
@@ -128,7 +128,7 @@ const Card = ({ image, name, position, title, message }) => {
             </div>
             <div className="text-center">
               <h2 className="text-2xl font-bold text-white mb-4">{title}</h2>
-              <p className="text-white/80 mb-6">{message}</p>
+              <p className="text-white/80 mb-6 whitespace-pre-wrap">{message}</p>
               <div className="flex justify-end">
                 <button
                     onClick={handleDownload}
