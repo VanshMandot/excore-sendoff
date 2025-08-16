@@ -159,7 +159,6 @@ const Card = ({ image, name, position, title, message }) => {
       <div className="relative z-10 flex flex-col h-full justify-between">
         <div className="flex justify-between items-center mb-6">
           <div className="flex items-center space-x-3">
-            <img src="/public/isaca.ico" alt="ISACA Logo" className="w-8 h-8 object-contain" />
             <h2 className="text-3xl font-extrabold text-white drop-shadow-md">{title}</h2>
           </div>
           <button
