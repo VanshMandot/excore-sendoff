@@ -4,14 +4,14 @@ import Card from './Card';
 const cardData = [
   {
     name: 'Rahil',
-    position: 'Ex - Chairperson',
+    position: 'Ex - President',
     image: '/pictures/Rahil.png',
     title: 'To the X-Man',
     message: "At first I always thought that u were a bit strict guy, but when I actually started talking u turned out to be a very chill guy. I still remember the day when I pitched the COC theme which was originally scrapped but u still gave me a chance to explain all the elements and stuff to you. I have never seen u lose your calm during an event and be composed, that is what I am hoping to learn from you and would love to take ISACA to greater heights than before",
   },
   {
     name: 'Deval',
-    position: 'Ex - Vice Chairperson',
+    position: 'Ex - Vice President',
     image: '/pictures/Deval.jpeg',
     title: 'To The Invisible Man',
     message: "Working with Deval as Vice Chairperson back when I was co-committee with him was genuinely great. He led the team without making it feel heavy, and even in the most stressful deadlines, he kept the mood light while making sure the work got done. His way of handling people and situations made working together something to look forward to, not something to survive. A lot of how I work now comes from seeing how he did it back then.\n\nThere are not enough words to tell what u have taught me in the short span of time that I know you. U got me into my first committee and have been a big brother to me always. Synergy wla night was the craziest one, but no words can suffice what I want to say. Thanks for always being there and helping out with anything and everything.",
