@@ -77,14 +77,14 @@ const cardData = [
     position: 'Ex - Creative HOD',
     image: '/pictures/Avantika.png',
     title: 'To Ava',
-    message: "Thank you for always listening, guiding, and helping me work through things I thought I couldn’t handle. Honestly, I’d be lying to myself if I said I couldn’t pull this off but you’ve truly given me the motivation to believe in myself even more, that means more to me than I could ever ask for. Thank you for being so understanding and for giving me a reason to keep this as my first preference. your trust is all that i need <3 abh pata chalrha hai how much of hardwork you used to put haha!! honestly couldn’t ask for a better head ❤",
+    message: "Thank you for always listening, guiding, and helping me work through things I thought I couldn’t handle. Honestly, I’d be lying to myself if I said I couldn’t pull this off but you’ve truly given me the motivation to believe in myself even more, that means more to me than I could ever ask for. Thank you for being so understanding and for giving me a reason to keep this as my first preference. your trust is all that i need <3 abh pata chalrha hai how much of hardwork you used to put haha!! honestly couldn’t ask for a better head ❤\n\nI’ve always looked up to you as a head — the perfect blend of strict and sweet. You were always there to stand up for us when teachers came after us, and that meant more than you know. We truly love and appreciate you. I still remember the day we were working in that scorching heat just to get our hard creatives work done — and you stayed right there with us, pushing through every second. You’ve been there with us through thick and thin."
   },
   {
     name: 'Gunj',
     position: 'Ex - Creative HOD',
     image: '/pictures/Gunj.png',
     title: 'To the Silent Master',
-    message: "You are the sweetest and you made working in creatives way easier and fun. i’m glad i gave a chance to creatives even though it being my fourth preference in interview last year and because of your guidance it has become the only preference for me. i was really scared during the interview but your for trust in me has really shaped me a lot, really grateful i got to be a part of creatives under you! lovedd working under youu <3 abh pata chalrha hai how much of hardwork you used to put haha!! honestly couldn’t ask for a better head ❤",
+    message: "You are the sweetest and you made working in creatives way easier and fun. i’m glad i gave a chance to creatives even though it being my fourth preference in interview last year and because of your guidance it has become the only preference for me. i was really scared during the interview but your for trust in me has really shaped me a lot, really grateful i got to be a part of creatives under you! lovedd working under youu <3 abh pata chalrha hai how much of hardwork you used to put haha!! honestly couldn’t ask for a better head ❤\n\nThe sweetest and most caring head ever — your kindness, patience, and ever-smiling face made every taskfeel lighter. Working under you has been nothing short of a joy. I still remember the day we were working in that scorching heat just to get our hard creatives work done — and you stayed right there with us, pushing through every second. You’ve been there with us through thick and thin."
 },
 {
     name: 'Preem', 
