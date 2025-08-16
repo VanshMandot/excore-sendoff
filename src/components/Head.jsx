@@ -11,6 +11,9 @@ export default function Head() {
         <p className="text-base md:text-lg max-w-3xl mx-auto leading-relaxed text-white/90 mb-2">
           Thank you for your incredible dedication, hard work, and leadership. Your contributions have made a lasting impact, and you will be truly missed. Wishing you all the very best in your next adventures!
         </p>
+        <p className="text-base md:text-lg max-w-3xl mx-auto leading-relaxed text-white/90 mb-2">
+          <b>Tap on your card… a little love note awaits you inside 🌟</b>
+        </p>
       </div>
     </section>
   );
