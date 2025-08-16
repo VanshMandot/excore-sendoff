@@ -1,6 +1,6 @@
 export default function Head() {
   return (
-    <section className="text-center mb-5 relative flex flex-col justify-center items-center">
+    <section className="text-center relative flex flex-col justify-center items-center">
       <div className="rounded-3xl p-8 md:p-12 max-w-3xl mx-auto">
         <h1 className="text-4xl md:text-6xl font-bold mb-6 gradient-text md:whitespace-nowrap">
           Farewell, Amazing Team!
