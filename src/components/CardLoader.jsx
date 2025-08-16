@@ -14,7 +14,7 @@ const cardData = [
     position: 'Ex - Vice President',
     image: '/pictures/Deval.jpeg',
     title: 'To The Invisible Man',
-    message: "Working with Deval as Vice Chairperson back when I was co-committee with him was genuinely great. He led the team without making it feel heavy, and even in the most stressful deadlines, he kept the mood light while making sure the work got done. His way of handling people and situations made working together something to look forward to, not something to survive. A lot of how I work now comes from seeing how he did it back then.\n\nThere are not enough words to tell what u have taught me in the short span of time that I know you. U got me into my first committee and have been a big brother to me always. Synergy wla night was the craziest one, but no words can suffice what I want to say. Thanks for always being there and helping out with anything and everything.",
+    message: "Working with Deval as Vice President back when I was co-committee with him was genuinely great. He led the team without making it feel heavy, and even in the most stressful deadlines, he kept the mood light while making sure the work got done. His way of handling people and situations made working together something to look forward to, not something to survive. A lot of how I work now comes from seeing how he did it back then.\n\nThere are not enough words to tell what u have taught me in the short span of time that I know you. U got me into my first committee and have been a big brother to me always. Synergy wla night was the craziest one, but no words can suffice what I want to say. Thanks for always being there and helping out with anything and everything.",
   },
   {
     name: 'Utkrushtha',

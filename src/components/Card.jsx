@@ -18,106 +18,13 @@ const Card = ({ image, name, position, title, message }) => {
         }
     };
   
-    const handleDownload = () => {
-        if (!overlayRef.current || !window.html2canvas) return;
-
-        const overlay = overlayRef.current;
-        const buttons = overlay.querySelectorAll('button');
-        buttons.forEach(btn => btn.style.display = 'none');
-    
-        const scrollable = overlay.querySelector('.scrollable-message');
-        const backgroundOverlay = overlay.querySelector('.bg-black\\/40')
-
-        const prevStyle = {
-            maxHeight: scrollable.style.maxHeight,
-            overflowY: scrollable.style.overflowY,
-        };
-        const prevClassName = overlay.className;
-        const prevBgImage = overlay.style.backgroundImage;
-        const prevBgColor = overlay.style.backgroundColor;
-        const prevOverlayBg = backgroundOverlay ? backgroundOverlay.style.backgroundColor : null;
-
-        const initialBlackLayer = document.createElement('div');
-        initialBlackLayer.style.position = 'absolute';
-        initialBlackLayer.style.inset = '0';
-        // initialBlackLayer.style.background = 'rgba(0, 0, 0, 1)';
-        initialBlackLayer.style.background = 'linear-gradient(90deg, #ff6b6b, #8e2de2)';
-        initialBlackLayer.style.zIndex = '-1';
-        overlay.insertBefore(initialBlackLayer, overlay.firstChild);
-
-        scrollable.style.maxHeight = 'none';
-        scrollable.style.overflowY = 'visible';
-        
-        overlay.className = overlay.className.replace('animated-bg', '').trim();
-
-        const overriddenElements = [];
-        const fixColors = (el) => {
-            const children = el.querySelectorAll('*');
-            [...children, el].forEach((child) => {
-            const computed = getComputedStyle(child);
-            const original = {
-                color: child.style.color,
-                backgroundColor: child.style.backgroundColor,
-                borderColor: child.style.borderColor,
-            };
-            overriddenElements.push({ el: child, original });
-            if (computed.color.includes('oklab')) child.style.color = '#ffffff';
-            if (computed.backgroundColor.includes('oklab')) child.style.backgroundColor = 'rgba(0, 0, 0, 0.4)';
-            if (computed.borderColor.includes('oklab')) child.style.borderColor = '#000000';
-            });
-        };
-        fixColors(overlay);
-
-        requestAnimationFrame(() => {
-            setTimeout(() => {
-            window.html2canvas(overlay, {
-                backgroundColor: null,
-                scale: 2,
-                useCORS: true,
-            })
-            .then((canvas) => {
-                Object.assign(scrollable.style, prevStyle);
-                buttons.forEach(btn => btn.style.display = '');
-                overlay.className = prevClassName;
-                overlay.style.backgroundImage = prevBgImage;
-                overlay.style.backgroundColor = prevBgColor;
-                if (backgroundOverlay) {
-                backgroundOverlay.style.backgroundColor = prevOverlayBg;
-                }
-                overriddenElements.forEach(({ el, original }) => {
-                el.style.color = original.color;
-                el.style.backgroundColor = original.backgroundColor;
-                el.style.borderColor = original.borderColor;
-                });
-                overlay.removeChild(initialBlackLayer);
-
-                const dataUrl = canvas.toDataURL('image/png');
-                const link = document.createElement('a');
-                link.download = `${name}-card.png`;
-                link.href = dataUrl;
-                link.click();
-            })
-            .catch((error) => {
-                console.error('Error generating canvas:', error);
-                
-                buttons.forEach(btn => btn.style.display = '');
-                Object.assign(scrollable.style, prevStyle);
-                overlay.className = prevClassName;
-                overlay.style.backgroundImage = prevBgImage;
-                overlay.style.backgroundColor = prevBgColor;
-                if (backgroundOverlay) {
-                backgroundOverlay.style.backgroundColor = prevOverlayBg;
-                }
-                overriddenElements.forEach(({ el, original }) => {
-                el.style.color = original.color;
-                el.style.backgroundColor = original.backgroundColor;
-                el.style.borderColor = original.borderColor;
-                });
-                overlay.removeChild(initialBlackLayer);
-            });
-            }, 100);
-        });
-    };
+const handleDownload = () => {
+    const filePath = `/cards/${name}-card.png`; 
+    const link = document.createElement('a');
+    link.href = filePath;
+    link.download = `${name}-card.png`;
+    link.click();
+};
 
     return (
     <>
